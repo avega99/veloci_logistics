@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="styles/accordion.css" />
+    <link rel="stylesheet" href="styles/scroll-bar.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <title>Veloci Logistics</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a href="#" class="nav-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26px"
+                viewBox="0 -960 960 960"
+                width="26px"
+                fill="#404040"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li><a href="#" class="nav-link">Nosotros</a></li>
+          <li><a href="#" class="nav-link">Servicios</a></li>
+          <li><a href="#" class="nav-link">Contacto</a></li>
+        </ul>
+        <ul>
+          <li><a href="/" class="logo-title">Velocy Logistics</a></li>
+          <li><a href="#" class="hideOnMobile nav-link">Nosotros</a></li>
+          <li><a href="#" class="hideOnMobile nav-link">Servicios</a></li>
+          <li><a href="#" class="hideOnMobile nav-link">Contacto</a></li>
+          <li class="menu-button" onclick="showSidebar()">
+            <a href="#" class="nav-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26px"
+                viewBox="0 -960 960 960"
+                width="26px"
+                fill="#404040"
+              >
+                <path
+                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <div class="container">
+          <span class="big-title"
+            >Vehículos de envío con <br />
+            los mejores servicios y calidad <br />
+            de la industria.
+          </span>
+          <p class="body-text header-text">
+            Optimice y mejore la cadena de suministro y la gestión de recursos
+            <br />
+            de su empresa con nuestras soluciones logísticas integradas. Desde
+            transporte eficiente, <br />
+            garantizamos la llegada segura y oportuna <br />
+            de sus mercancías a los lugares designados.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="main">
+        <h3 class="subheading">CONFIANZA POR EL CLIENTE</h3>
+        <div class="separator"></div>
+      </div>
+      <div class="clients-horizontal">
+        <img src="./assets/images/brands/gepp2.png" class="client-img" alt="" />
+        <img src="./assets/images/brands/abs.webp" class="client-img" alt="" />
+        <img
+          src="./assets/images/brands/tecno2.png"
+          class="client-img"
+          alt=""
+        />
+        <img
+          src="./assets/images/brands/euro2.png"
+          width="auto"
+          height="150px"
+          style="object-fit: cover"
+          alt=""
+        />
+        <img
+          src="./assets/images/brands/ryder3.png"
+          class="client-img"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="main">
+      <h3 class="subheading">NUESTROS SERVICIOS</h3>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header">Sección 1</div>
+          <div class="accordion-content">
+            <p>Contenido de la sección 1.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Sección 2</div>
+          <div class="accordion-content">
+            <p>Contenido de la sección 2.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Sección 3</div>
+          <div class="accordion-content">
+            <p>Contenido de la sección 3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/accordion.js"></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>

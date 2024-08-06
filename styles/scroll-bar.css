@@ -1,0 +1,17 @@
+.clients-horizontal::-webkit-scrollbar {
+  max-width: 2px; /* Ancho de la barra de desplazamiento */
+  height: 6px;
+}
+
+.clients-horizontal::-webkit-scrollbar-track {
+  background: #e8e8e8; /* Color de la pista */
+}
+
+.clients-horizontal::-webkit-scrollbar-thumb {
+  background: #e44203; /* Color del pulgar */
+  border-radius: 10px; /* Borde redondeado del pulgar */
+}
+
+.clients-horizontal::-webkit-scrollbar-thumb:hover {
+  background: #e44203; /* Color del pulgar al pasar el mouse */
+}
