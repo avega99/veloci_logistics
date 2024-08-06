@@ -199,6 +199,19 @@ nav li:first-child {
   object-fit: cover;
 }
 
+.services-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.services-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 40px;
+  min-height: 500px;
+}
+
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -219,7 +232,20 @@ nav li:first-child {
     height: 100px;
     object-fit: cover;
   }
+  .clients-horizontal {
+    padding: 0 2rem 0 2rem;
+  }
+  .services-container {
+    flex-direction: column;
+  }
+  .services-img {
+    height: auto;
+    width: 100%;
+    min-height: 0;
+    border-radius: 28px;
+  }
 }
+
 @media (max-width: 425px) {
   .sidebar {
     width: 100%;
