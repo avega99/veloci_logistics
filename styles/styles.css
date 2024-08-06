@@ -247,6 +247,7 @@ nav li:first-child {
     width: 100%;
     min-height: 0;
     border-radius: 28px;
+    min-width: 0;
   }
   .subheading {
     font-size: 1rem;
