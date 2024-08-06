@@ -25,9 +25,21 @@
   align-items: center;
 }
 
+.accordion-body-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #868686;
+}
+
 /* .accordion-header:hover {
   background-color: #e0e0e0;
 } */
+
+.accordion-header-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: black;
+}
 
 .accordion-content {
   padding: 0 15px;
@@ -39,4 +51,13 @@
 .accordion-content p {
   margin: 0;
   padding: 15px 0;
+}
+
+@media (max-width: 800px) {
+  .accordion-header-title {
+    font-size: 1rem;
+  }
+  .accordion-body-text {
+    font-size: 0.8rem;
+  }
 }

@@ -203,13 +203,17 @@ nav li:first-child {
   display: flex;
   flex-direction: row;
   gap: 2rem;
+  width: 100%;
 }
 
 .services-img {
   height: 100%;
   width: 100%;
   border-radius: 40px;
-  min-height: 500px;
+  min-height: 400px;
+  min-width: 400px;
+  /* min-height: 500px;
+  min-width: 40%; */
 }
 
 @media (max-width: 800px) {
@@ -243,6 +247,9 @@ nav li:first-child {
     width: 100%;
     min-height: 0;
     border-radius: 28px;
+  }
+  .subheading {
+    font-size: 1rem;
   }
 }
 
