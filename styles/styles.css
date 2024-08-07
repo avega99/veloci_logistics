@@ -292,7 +292,47 @@ nav li:first-child {
   background-size: cover;
 }
 
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  align-items: center;
+}
+
+.contact-item-detail {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-title {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #171717;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.contact-second-detail {
+  color: #828282;
+}
+
 @media (max-width: 800px) {
+  .contacts-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
   .mision-content-text {
     font-size: 18px;
   }
