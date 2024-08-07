@@ -286,7 +286,7 @@ nav li:first-child {
 
 .contact-form-container {
   width: 100%;
-  background-image: url('/assets/icons/CTA.png');
+  background-image: url('../assets/icons/CTA.png');
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
