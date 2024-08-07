@@ -161,14 +161,14 @@
                   </g>
                 </svg>
                 <div class="accordion-title-container">
-                  <p class="accordion-header-title">
+                  <p class="subtitle">
                     Unidades de 1.5 toneladas
                   </p>
                   <img src="./assets/icons/chevron-down.svg" alt="" />
                 </div>
               </div>
               <div class="accordion-content">
-                <p class="accordion-body-text">
+                <p class="mision-content-text" style="color: #737373;">
                   Nuestras camionetas de 1.5 toneladas son ideales para el
                   transporte de cargas ligeras y medianas. Estas unidades son
                   perfectas para entregas rápidas y eficientes dentro de la
@@ -241,14 +241,14 @@
                   </g>
                 </svg>
                 <div class="accordion-title-container">
-                  <p class="accordion-header-title">
+                  <p class="subtitle">
                     Unidades 3.5 toneladas hasta 53 pies
                   </p>
                   <img src="./assets/icons/chevron-down.svg" alt="" />
                 </div>
               </div>
               <div class="accordion-content">
-                <p class="accordion-body-text">
+                <p class="mision-content-text" style="color: #737373;">
                   Contamos con una flota de camiones que varían en capacidad
                   desde 3.5 toneladas hasta 53 pies, adaptándose a una amplia
                   gama de necesidades logísticas. Estos camiones son ideales
@@ -275,12 +275,12 @@
                   />
                 </svg>
                 <div class="accordion-title-container">
-                  <p class="accordion-header-title">Porta Contenedor</p>
+                  <p class="subtitle">Porta Contenedor</p>
                   <img src="./assets/icons/chevron-down.svg" alt="" />
                 </div>
               </div>
               <div class="accordion-content">
-                <p class="accordion-body-text">
+                <p class="mision-content-text" style="color: #737373;">
                   Nuestros porta contenedores están diseñados para manejar
                   cargas pesadas y voluminosas, proporcionando una solución
                   robusta para el transporte de contenedores de 20 y 40 pies.
@@ -294,6 +294,45 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <!-- <h3 class="subheading" style="margin-top: 1rem; margin-bottom: 1rem">
+        EXPERIENCIA
+      </h3> -->
+      <div class="offer-container">
+        <img src="./assets/images/all/truck.jpg" class="offer-image" alt="" />
+        <div class="offer-list-container">
+          <div class="offer-list-item-container">
+            <h5 class="subtitle">Experiencia:</h5>
+            <ul>
+              <li><p class="mision-content-text">Entrega en CEDIS.</p></li>
+              <li><p class="mision-content-text">Entrega en interbodegas.</p></li>
+              <li><p class="mision-content-text">Servicio dedicado.</p></li>
+              <li><p class="mision-content-text">Amplio conocimiento del área metropolitana.</p></li>
+              <li><p class="mision-content-text">Servicio consolidado.</p></li>
+              <li><p class="mision-content-text">Viajes foraneos.</p></li>
+              <li><p class="mision-content-text">Door to door.</p></li>
+            </ul>
+          </div>
+          <div class="offer-list-item-container">
+            <h5 class="subtitle">Contamos con:</h5>
+            <ul>
+              <li><p class="mision-content-text">Operadores certificados.</p></li>
+              <li><p class="mision-content-text">Unidades con sistema de geolocalización.</p></li>
+              <li>
+                <p class="mision-content-text">
+                  Unidades con aditamientos de seguridad tales como (traba
+                  quinta-sensores de bloqueo en puertas con motor prendido etc).
+                </p>
+              </li>
+              <li><p class="mision-content-text">Procedimientos establecidos en caso de riesgos.</p></li>
+              <li><p class="mision-content-text">Monitoreos 24/7.</p></li>
+              <li><p class="mision-content-text">Asistencia vial para todas nuestras unidades 24/7.</p></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -330,7 +369,7 @@
     </section>
 
     <section class="contact-form-container">
-      <div class="main">
+      <div class="main" style="position: relative; z-index: 2">
         <div class="contact-main-container">
           <p class="get-cuote">Consigue una cotización</p>
           <p class="title" style="color: white">Déjanos un mensaje!</p>
@@ -338,7 +377,7 @@
         <form action="" class="contact-form">
           <div class="two-inputs">
             <div class="input-container">
-              <input type="text" placeholder="Nombre" />
+              <input type="text" placeholder="Nombre" required />
               <img
                 src="./assets/icons/required.png"
                 class="required-icon"
@@ -346,7 +385,7 @@
               />
             </div>
             <div class="input-container">
-              <input type="text" placeholder="Apellido" />
+              <input type="text" placeholder="Apellido" required />
               <img
                 src="./assets/icons/required.png"
                 class="required-icon"
@@ -355,7 +394,7 @@
             </div>
           </div>
           <div class="one-input">
-            <input type="email" name="" id="" placeholder="Correo" />
+            <input type="email" name="" id="" placeholder="Correo" required />
             <img
               src="./assets/icons/required.png"
               class="required-icon"
@@ -368,6 +407,7 @@
               name=""
               id=""
               placeholder="Número de teléfono"
+              required
             />
             <img
               src="./assets/icons/required.png"
@@ -382,6 +422,7 @@
               name=""
               id=""
               rows="6"
+              required
             ></textarea>
             <img
               src="./assets/icons/required.png"

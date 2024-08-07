@@ -19,6 +19,9 @@
   --primary: #e44203;
   --secondary: #eeeeee;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   min-height: 100vh;
@@ -252,7 +255,7 @@ nav li:first-child {
 
 .mision-content-text {
   color: #919191;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.7;
 }
 
@@ -290,6 +293,23 @@ nav li:first-child {
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.contact-form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Ajusta el color y la opacidad según sea necesario */
+  /* z-index: 1; */
 }
 
 .contact-icon {
@@ -328,13 +348,70 @@ nav li:first-child {
   color: #828282;
 }
 
+.offer-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.offer-image {
+  width: 50%;
+  height: auto;
+  border-radius: 40px;
+}
+
+.offer-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.offer-list-container ul {
+  margin-left: 1rem;
+}
+
+.offer-list-container h5 {
+  margin-bottom: 1rem;
+}
+
+/* .offer-list-container {
+  color: var(--gray500);
+} */
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 500;
+  color: #171717;
+}
+
 @media (max-width: 800px) {
+  .subtitle {
+    font-size: 18px;
+  }
+  .offer-container {
+    flex-direction: column;
+    /* gap: 2rem; */
+  }
+
+  .offer-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-content {
+    padding: 4rem 1rem;
+  }
+  .main {
+    padding: 1rem;
+  }
   .contacts-container {
     flex-direction: column;
     gap: 2rem;
   }
   .mision-content-text {
-    font-size: 18px;
+    font-size: 15px;
   }
   .title {
     font-weight: 500;
@@ -352,7 +429,7 @@ nav li:first-child {
   }
 
   .header-text {
-    max-width: 70%;
+    max-width: 60%;
   }
   .client-img {
     width: auto;
@@ -386,7 +463,7 @@ nav li:first-child {
   }
 
   .header-text {
-    max-width: 100%;
+    max-width: 85%;
   }
 
   .client-img {
