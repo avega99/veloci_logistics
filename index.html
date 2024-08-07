@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="styles/accordion.css" />
     <link rel="stylesheet" href="styles/scroll-bar.css" />
+    <link rel="stylesheet" href="styles/form.css" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
@@ -110,7 +111,7 @@
       <div class="services-container">
         <div>
           <img
-            src="./assets/images/all/trailer.png"
+            src="./assets/images/all/trailer2.avif"
             class="services-img"
             alt=""
           />
@@ -294,6 +295,102 @@
         </div>
       </div>
     </section>
+
+    <section class="main">
+      <div class="mision-container">
+        <div class="mission-title-container">
+          <p class="title">Elaborando excelencia en vehículos de transporte.</p>
+        </div>
+        <div class="mision-content">
+          <div class="mision-content-container" style="flex: 1">
+            <p class="mision-content-text">
+              <strong>
+                En Veloci, nuestra misión es brindar un servicio de transporte
+                de excelencia y calidad,</strong
+              >
+              basado en la satisfacción de las exigencias y de nuestros
+              clientes. Operando en forma eficiente y segura.
+            </p>
+            <button class="primary-button mision-button">
+              Más información
+            </button>
+          </div>
+          <div class="mision-img-container">
+            <img
+              class="mision-img"
+              src="./assets/icons/mision-image2.avif"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-container">
+      <div class="main">
+        <div class="contact-main-container">
+          <p class="get-cuote">Consigue una cotización</p>
+          <p class="title" style="color: white">Déjanos un mensaje!</p>
+        </div>
+        <form action="" class="contact-form">
+          <div class="two-inputs">
+            <div class="input-container">
+              <input type="text" placeholder="Nombre" />
+              <img
+                src="./assets/icons/required.png"
+                class="required-icon"
+                alt=""
+              />
+            </div>
+            <div class="input-container">
+              <input type="text" placeholder="Apellido" />
+              <img
+                src="./assets/icons/required.png"
+                class="required-icon"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="one-input">
+            <input type="email" name="" id="" placeholder="Correo" />
+            <img
+              src="./assets/icons/required.png"
+              class="required-icon"
+              alt=""
+            />
+          </div>
+          <div class="one-input">
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Número de teléfono"
+            />
+            <img
+              src="./assets/icons/required.png"
+              class="required-icon"
+              alt=""
+            />
+          </div>
+          <div class="one-input">
+            <textarea
+              style="flex: 1"
+              placeholder="¿Cómo podemos ayudar?"
+              name=""
+              id=""
+              rows="6"
+            ></textarea>
+            <img
+              src="./assets/icons/required.png"
+              class="required-icon"
+              alt=""
+            />
+          </div>
+          <button class="primary-button" type="submit">Envia tu mensaje</button>
+        </form>
+      </div>
+    </section>
+
     <script src="js/accordion.js"></script>
     <script>
       function showSidebar() {

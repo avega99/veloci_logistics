@@ -82,7 +82,7 @@ header::after {
   right: 0;
   width: 50%; /* Ancho de la segunda imagen */
   height: 70%; /* Alto de la segunda imagen */
-  background-image: url('../assets/icons/header-image.png');
+  background-image: url('../assets/icons/header-image2.png');
   background-repeat: no-repeat;
   background-size: contain; /* Ajusta según sea necesario */
   background-position: bottom right; /* Ajusta según sea necesario */
@@ -216,7 +216,90 @@ nav li:first-child {
   min-width: 40%; */
 }
 
+.mision-container {
+  display: flex;
+  flex-direction: column;
+}
+.mision-content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.mission-title-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.mision-img {
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+  color: #171717;
+}
+.mission-title-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.mision-content-text {
+  color: #919191;
+  font-size: 24px;
+  line-height: 1.7;
+}
+
+.mision-button {
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.primary-button {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 35px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  text-decoration: none;
+}
+
+.mision-img-container {
+  flex: 1;
+}
+
+.mision-content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-container {
+  width: 100%;
+  background-image: url('/assets/icons/CTA.png');
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 800px) {
+  .mision-content-text {
+    font-size: 18px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 26px;
+  }
   .hideOnMobile {
     display: none;
   }
@@ -251,6 +334,9 @@ nav li:first-child {
   }
   .subheading {
     font-size: 1rem;
+  }
+  .mision-content {
+    flex-direction: column;
   }
 }
 
