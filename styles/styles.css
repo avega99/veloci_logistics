@@ -499,12 +499,26 @@ section {
   }
 
   .header-text {
-    max-width: 85%;
+    max-width: 100%;
   }
 
   .client-img {
     width: auto;
     height: 80px;
     object-fit: cover;
+  }
+
+  header::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: 0;
+    width: 70%; /* Ancho de la segunda imagen */
+    height: 70%; /* Alto de la segunda imagen */
+    background-image: url('../assets/icons/header-image.png');
+    background-repeat: no-repeat;
+    background-size: contain; /* Ajusta según sea necesario */
+    background-position: bottom right; /* Ajusta según sea necesario */
+    z-index: -1; /* Asegura que esté debajo del gradiente */
   }
 }
