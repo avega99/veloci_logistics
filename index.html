@@ -31,15 +31,17 @@
               </svg>
             </a>
           </li>
-          <li><a href="#" class="nav-link">Nosotros</a></li>
-          <li><a href="#" class="nav-link">Servicios</a></li>
-          <li><a href="#" class="nav-link">Contacto</a></li>
+          <li><a href="#about" class="nav-link">Nosotros</a></li>
+          <li><a href="#services" class="nav-link">Servicios</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
         </ul>
         <ul>
           <li><a href="/" class="logo-title">Velocy Logistics</a></li>
-          <li><a href="#" class="hideOnMobile nav-link">Nosotros</a></li>
-          <li><a href="#" class="hideOnMobile nav-link">Servicios</a></li>
-          <li><a href="#" class="hideOnMobile nav-link">Contacto</a></li>
+          <li><a href="#about" class="hideOnMobile nav-link">Nosotros</a></li>
+          <li>
+            <a href="#services" class="hideOnMobile nav-link">Servicios</a>
+          </li>
+          <li><a href="#contact" class="hideOnMobile nav-link">Contacto</a></li>
           <li class="menu-button" onclick="showSidebar()">
             <a href="#" class="nav-link">
               <svg
@@ -68,8 +70,8 @@
             Optimice y mejore la cadena de suministro y la gestión de recursos
             <br />
             de su empresa con nuestras soluciones logísticas integradas. Desde
-            transporte eficiente, <br />
-            garantizamos la llegada segura y oportuna <br />
+            transporte eficiente, garantizamos la llegada segura y oportuna
+            <br />
             de sus mercancías a los lugares designados.
           </p>
         </div>
@@ -104,7 +106,7 @@
       </div>
     </section>
 
-    <section class="main">
+    <section class="main" id="services">
       <h3 class="subheading" style="margin-top: 1rem; margin-bottom: 1rem">
         NUESTROS SERVICIOS
       </h3>
@@ -416,7 +418,7 @@
       </div>
     </section>
 
-    <section class="main">
+    <section class="main" id="about">
       <div class="mision-container">
         <div class="mission-title-container">
           <p class="title">Elaborando excelencia en vehículos de transporte.</p>
@@ -446,7 +448,7 @@
       </div>
     </section>
 
-    <section class="contact-form-container">
+    <section class="contact-form-container" id="contact">
       <div class="main" style="position: relative; z-index: 2">
         <div class="contact-main-container">
           <p class="get-cuote">Consigue una cotización</p>
@@ -569,6 +571,13 @@
 
     <script src="js/accordion.js"></script>
     <script>
+      document.querySelectorAll('.nav-link').forEach((link) => {
+        link.addEventListener('click', (e) => {
+          // e.preventDefault()
+          hideSidebar()
+        })
+      })
+
       function showSidebar() {
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'flex'
