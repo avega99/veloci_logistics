@@ -85,7 +85,7 @@ header::after {
   right: 0;
   width: 50%; /* Ancho de la segunda imagen */
   height: 70%; /* Alto de la segunda imagen */
-  background-image: url('../assets/icons/header-image2.png');
+  background-image: url('../assets/icons/header-image.png');
   background-repeat: no-repeat;
   background-size: contain; /* Ajusta según sea necesario */
   background-position: bottom right; /* Ajusta según sea necesario */
@@ -215,6 +215,7 @@ nav li:first-child {
   border-radius: 40px;
   min-height: 400px;
   min-width: 400px;
+  object-fit: cover;
   /* min-height: 500px;
   min-width: 40%; */
 }
@@ -357,9 +358,10 @@ nav li:first-child {
 }
 
 .offer-image {
-  width: 50%;
+  width: 28%;
   height: auto;
   border-radius: 40px;
+  object-fit: cover;
 }
 
 .offer-list-container {
@@ -408,7 +410,14 @@ nav li:first-child {
   margin-bottom: 1rem;
 }
 
+section {
+  margin-top: 7rem;
+}
+
 @media (max-width: 800px) {
+  section {
+    margin-top: 3rem;
+  }
   .subtitle {
     font-size: 18px;
   }
