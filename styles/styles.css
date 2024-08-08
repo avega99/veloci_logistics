@@ -252,6 +252,7 @@ nav li:first-child {
 .title {
   font-weight: 500;
   font-size: 64px;
+  margin-bottom: 4rem;
 }
 
 .mision-content-text {
@@ -447,6 +448,7 @@ section {
   .title {
     font-weight: 500;
     font-size: 26px;
+    margin-bottom: 1rem;
   }
   .hideOnMobile {
     display: none;
