@@ -139,6 +139,7 @@ nav li:first-child {
 }
 
 .sidebar {
+  transition: all 0.5s ease-out;
   position: fixed;
   top: 0;
   right: 0;
@@ -415,6 +416,10 @@ section {
   margin-top: 7rem;
 }
 
+.offer-list-item-container ul li p {
+  text-align: left;
+}
+
 @media (max-width: 800px) {
   section {
     margin-top: 3rem;
@@ -491,6 +496,10 @@ section {
 }
 
 @media (max-width: 425px) {
+  .center-on-mobile {
+    text-align: center;
+  }
+
   .why-content-container {
     flex-direction: column;
     gap: 1.5rem;
