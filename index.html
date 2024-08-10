@@ -402,7 +402,7 @@
         </div>
         <div class="mision-content">
           <div class="mision-content-container" style="flex: 1">
-            <p class="mision-content-text" style="text-align: center;">
+            <p class="mision-content-text" style="text-align: center">
               <strong>
                 En Veloci, nuestra misión es brindar un servicio de transporte
                 de excelencia y calidad,</strong
@@ -415,11 +415,7 @@
             </button> -->
           </div>
           <div class="mision-img-container">
-            <img
-              class="mision-img"
-              src="./assets/images/all/why2.jpg"
-              alt=""
-            />
+            <img class="mision-img" src="./assets/images/all/why2.jpg" alt="" />
           </div>
         </div>
       </div>
@@ -433,7 +429,7 @@
         </div>
         <div class="mision-content">
           <div class="mision-content-container" style="flex: 1">
-            <p class="mision-content-text" style="text-align: center;">
+            <p class="mision-content-text" style="text-align: center">
               Ser una empresa en el servicio de transporte de carga,
               esforzándonos por brindar seguridad en nuestros viajes con la
               capacidad, atención y servico que los clientes requieren.
@@ -513,7 +509,11 @@
         <div class="mission-title-container">
           <p class="title">¿Por qué trabajar con nostros?</p>
         </div>
-        <img src="./assets/images/all/north-truck.png" class="why-image" alt="" />
+        <img
+          src="./assets/images/all/north-truck.png"
+          class="why-image"
+          alt=""
+        />
         <div class="why-content-container">
           <div class="why-section">
             <div>
@@ -585,7 +585,7 @@
         <form action="" class="contact-form">
           <div class="two-inputs">
             <div class="input-container">
-              <input type="text" placeholder="Nombre" required />
+              <input type="text" name="name" placeholder="Nombre" required />
               <img
                 src="./assets/icons/required.png"
                 class="required-icon"
@@ -593,7 +593,7 @@
               />
             </div>
             <div class="input-container">
-              <input type="text" placeholder="Apellido" required />
+              <input type="text" name="lastname" placeholder="Apellido" required />
               <img
                 src="./assets/icons/required.png"
                 class="required-icon"
@@ -602,7 +602,7 @@
             </div>
           </div>
           <div class="one-input">
-            <input type="email" name="" id="" placeholder="Correo" required />
+            <input type="email" name="email" id="" placeholder="Correo" required />
             <img
               src="./assets/icons/required.png"
               class="required-icon"
@@ -611,8 +611,8 @@
           </div>
           <div class="one-input">
             <input
-              type="email"
-              name=""
+              type="text"
+              name="phone"
               id=""
               placeholder="Número de teléfono"
               required
@@ -627,7 +627,7 @@
             <textarea
               style="flex: 1"
               placeholder="¿Cómo podemos ayudar?"
-              name=""
+              name="message"
               id=""
               rows="6"
               required
@@ -718,6 +718,9 @@
       </footer>
     </div>
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/form.js"></script>
     <script src="js/accordion.js"></script>
     <script>
       document.querySelectorAll('.nav-link').forEach((link) => {
