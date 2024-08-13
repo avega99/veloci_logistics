@@ -18,17 +18,21 @@ function sendEmail() {
 
   console.log({ message, phone, name, lastname, email })
 
+  // velocilogis@gmail.com
+  // 4302DD735E11ED63A26840CD5453EB87EEB4
+
   Email.send({
     SecureToken: '3fb48269-7aab-44b7-ac98-63818546746c',
-    To: 'alejandrovegaaguillon99@gmail.com',
+    To: 'sofi.ayala.e@gmail.com',
     From: 'alejandrovegaaguillon99@gmail.com',
     Subject: 'CONTACTO',
     Body: bodyMessage,
   })
     .then((message) => {
+      console.log({ message })
       if (message == 'OK') {
         Swal.fire({
-          title: 'Good job!',
+          title: 'Buen trabajo!',
           text: 'Mensaje enviado correctamente!',
           icon: 'success',
         })

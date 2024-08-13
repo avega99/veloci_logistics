@@ -284,6 +284,14 @@ nav li:first-child {
   flex: 1;
 }
 
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
 .mision-content-container {
   flex: 1;
   display: flex;
