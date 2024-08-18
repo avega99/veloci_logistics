@@ -85,7 +85,7 @@ header::after {
   right: 0;
   width: 50%; /* Ancho de la segunda imagen */
   height: 70%; /* Alto de la segunda imagen */
-  background-image: url('../assets/icons/header-image.png');
+  background-image: url('../assets/images/all/camiones-blancos-header-2.png');
   background-repeat: no-repeat;
   background-size: contain; /* Ajusta según sea necesario */
   background-position: bottom right; /* Ajusta según sea necesario */
@@ -534,7 +534,7 @@ section {
     right: 0;
     width: 70%; /* Ancho de la segunda imagen */
     height: 70%; /* Alto de la segunda imagen */
-    background-image: url('../assets/icons/header-image.png');
+    background-image: url('../assets/images/all/camiones-blancos-header-2.png');
     background-repeat: no-repeat;
     background-size: contain; /* Ajusta según sea necesario */
     background-position: bottom right; /* Ajusta según sea necesario */
