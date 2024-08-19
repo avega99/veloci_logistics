@@ -22,9 +22,9 @@ function sendEmail() {
   // 4302DD735E11ED63A26840CD5453EB87EEB4
 
   Email.send({
-    SecureToken: '3fb48269-7aab-44b7-ac98-63818546746c',
-    To: 'sofi.ayala.e@gmail.com',
-    From: 'alejandrovegaaguillon99@gmail.com',
+    SecureToken: '89551411-a0ff-4b47-8a65-1957ce435171',
+    To: 'velocilogis@gmail.com',
+    From: 'velocilogis@gmail.com',
     Subject: 'CONTACTO',
     Body: bodyMessage,
   })
