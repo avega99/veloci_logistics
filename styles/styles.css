@@ -156,8 +156,8 @@ nav li:first-child {
   width: 250px;
   z-index: 9999;
   background-color: rgba(255, 255, 255, 0.6);
-  /* background-color: white; */
-  backdrop-filter: blur(10px);
+  background-color: white;
+  /* backdrop-filter: blur(10px); */
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.2);
   display: none;
   flex-direction: column;
