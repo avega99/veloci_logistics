@@ -795,10 +795,12 @@
       })
 
       function showSidebar() {
+        document.body.style.overflow = 'hidden';
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'flex'
       }
       function hideSidebar() {
+        document.body.style.overflow = '';
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'none'
       }
