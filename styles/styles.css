@@ -559,5 +559,6 @@ section {
     background-size: contain; /* Ajusta según sea necesario */
     background-position: bottom right; /* Ajusta según sea necesario */
     z-index: -1; /* Asegura que esté debajo del gradiente */
+    opacity: 0.4;
   }
 }
