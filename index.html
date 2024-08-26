@@ -117,7 +117,7 @@
             los mejores servicios y calidad <br />
             de la industria.
           </span>
-          <p class="body-text header-text" style="color: black;">
+          <p class="body-text header-text" style="color: black">
             Optimice y mejore la cadena de suministro y la gestión de recursos
             de su empresa con nuestras soluciones logísticas integradas. Desde
             transporte eficiente, garantizamos la llegada segura y oportuna de
@@ -657,26 +657,42 @@
               />
             </div>
           </div>
-          <div class="one-input">
-            <input
-              type="email"
-              name="email"
-              id=""
-              placeholder="Correo"
-              required
-            />
-            <img
-              src="./assets/icons/required.png"
-              class="required-icon"
-              alt=""
-            />
+          <div class="two-inputs">
+            <div class="input-container">
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Correo"
+                required
+              />
+              <img
+                src="./assets/icons/required.png"
+                class="required-icon"
+                alt=""
+              />
+            </div>
+            <div class="input-container">
+              <input
+                type="text"
+                name="phone"
+                id=""
+                placeholder="Número de teléfono"
+                required
+              />
+              <img
+                src="./assets/icons/required.png"
+                class="required-icon"
+                alt=""
+              />
+            </div>
           </div>
           <div class="one-input">
             <input
               type="text"
-              name="phone"
+              name="subject"
               id=""
-              placeholder="Número de teléfono"
+              placeholder="¿Cuál es el motivo de tu consulta?"
               required
             />
             <img
@@ -795,12 +811,12 @@
       })
 
       function showSidebar() {
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden'
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'flex'
       }
       function hideSidebar() {
-        document.body.style.overflow = '';
+        document.body.style.overflow = ''
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'none'
       }

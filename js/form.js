@@ -11,16 +11,17 @@ function sendEmail() {
   const name = formData.get('name')
   const lastname = formData.get('lastname')
   const email = formData.get('email')
+  const subject = formData.get('subject')
 
   const bodyMessage = `
-      <strong>Nombre:</strong> ${name}<br> Correo: ${email}<br> Número de teléfono: ${phone}<br> Mensaje: ${message}
+      <strong>Nombre:</strong> ${name} ${lastname}<br> Correo: ${email}<br> Número de teléfono: ${phone}<br> Mensaje: ${message}
     `
 
   Email.send({
     SecureToken: '71f1e6e8-6ac3-409e-a045-eb71b660cd82',
     To: 'velocilogistics@gmail.com',
     From: 'velocilogistics@gmail.com',
-    Subject: 'CONTACTO',
+    Subject: subject,
     Body: bodyMessage,
   })
     .then((message, data) => {
