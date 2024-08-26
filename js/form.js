@@ -21,14 +21,19 @@ function sendEmail() {
   // velocilogis@gmail.com
   // 4302DD735E11ED63A26840CD5453EB87EEB4
 
+  // CF4966584ED428D3C62AFAD8CE4695F8C6E9
+
   Email.send({
-    SecureToken: '89551411-a0ff-4b47-8a65-1957ce435171',
-    To: 'velocilogis@gmail.com',
-    From: 'velocilogis@gmail.com',
+    // SecureToken: '89551411-a0ff-4b47-8a65-1957ce435171',
+    Host: 'smtp.elasticemail.com',
+    Username: 'velocilogistics@gmail.com',
+    Password: 'CF4966584ED428D3C62AFAD8CE4695F8C6E9',
+    To: 'velocilogistics@gmail.com',
+    From: 'velocilogistics@gmail.com',
     Subject: 'CONTACTO',
     Body: bodyMessage,
   })
-    .then((message) => {
+    .then((message, data) => {
       console.log({ message })
       if (message == 'OK') {
         Swal.fire({
