@@ -4,6 +4,8 @@
 const form = document.querySelector('form')
 
 function sendEmail() {
+  const submitButton = document.getElementById('submitButton')
+  submitButton.disabled = true
   const formData = new FormData(form)
 
   const message = formData.get('message')
@@ -27,6 +29,7 @@ function sendEmail() {
     .then((message, data) => {
       console.log({ message })
       if (message == 'OK') {
+        submitButton.disabled = true
         Swal.fire({
           title: 'Buen trabajo!',
           text: 'Mensaje enviado correctamente!',
@@ -34,6 +37,7 @@ function sendEmail() {
         })
         form.reset()
       } else {
+        submitButton.disabled = true
         Swal.fire({
           icon: 'error',
           title: 'Hubo un error al enviar el mensaje.',
@@ -43,6 +47,8 @@ function sendEmail() {
       }
     })
     .catch((error) => {
+      submitButton.disabled = true
+
       console.log({ error })
       Swal.fire({
         icon: 'error',
